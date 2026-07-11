@@ -4,10 +4,10 @@
 export const siteConfig = {
   hero: {
     title: "Happy 21st Birthday, Riya! 🎉",
-    subtitle: "21 years of pure magic ✨",
-    photo: "/images/riya10.jpg" // Hero image (using verified file extension)
+    subtitle: "Nursery to now - 17 years of ride or die energy",
+    photo: "/images/riya10.jpg" // Hero image
   },
-  
+
   gallery: [
     { id: 1, src: "/images/riya1.jpeg", caption: "Starting the year with that beautiful smile ✨" },
     { id: 2, src: "/images/riya2.jpg", caption: "Always the life of the party! 💃" },
@@ -32,85 +32,97 @@ export const siteConfig = {
     { id: 21, src: "/images/riya21.jpg", caption: "Sweet moments and even sweeter friendships 🍭" },
     { id: 22, src: "/images/riya22.jpg", caption: "Cheers to 21 years of pure magic! 🥂✨" }
   ],
-  
-  timeline: [
+
+  ratherQuestions: [
     {
       id: 1,
-      year: "2020",
-      title: "The First Chapter 📖",
-      photo: "/images/riya1.jpeg",
-      caption: "The day we first met and clicked instantly. Who knew we would become this close? Add your memory here..."
+      optionA: "Miss an F1 race 🏎️",
+      optionB: "Miss a One Direction reunion tour 🎤"
     },
     {
       id: 2,
-      year: "2021",
-      title: "Road Trips & Loud Music 🚗",
-      photo: "/images/riya3.jpg",
-      caption: "Blasting our favorite songs with the windows down, driving to nowhere. Add your memory here..."
+      optionA: "Lose her Notes app planner 📱",
+      optionB: "Lose her phone charger ⚡"
     },
     {
       id: 3,
-      year: "2022",
-      title: "Midnight Ice Cream Runs 🍦",
-      photo: "/images/riya5.jpg",
-      caption: "Talking about life and our biggest dreams over scoops of mint chocolate chip at 2 AM. Add your memory here..."
+      optionA: "Arrive 2 hours early to everything ⏰",
+      optionB: "Be spontaneous for one day 🌀"
     },
     {
       id: 4,
-      year: "2023",
-      title: "Beach Days & Sunburns 🏖️",
-      photo: "/images/riya7.jpg",
-      caption: "Laying on the sand all day, doing absolutely nothing but laughing. Add your memory here..."
+      optionA: "Date a Formula 1 driver 🏁",
+      optionB: "Date Harry Styles 🌹"
     },
     {
       id: 5,
-      year: "2024",
-      title: "Late Night Study Sessions 📚",
-      photo: "/images/riya9.jpg",
-      caption: "By study, I mean ordering takeout and talking for hours while our books sat open. Add your memory here..."
+      optionA: "Have unlimited Grand Prix pit-lane access 🎟️",
+      optionB: "Front row at a 1D reunion show 🎫"
     },
     {
       id: 6,
-      year: "2025",
-      title: "Here's to 21 & Beyond! 🥂",
-      photo: "/images/riya11.jpg",
-      caption: "And now here we are, celebrating your milestone 21st! I am so proud of who you have become. Add your memory here..."
+      optionA: "Organize everyone else's life forever 📋",
+      optionB: "Let someone else make decisions for a week 🎲"
+    },
+    {
+      id: 7,
+      optionA: "Lose her voice 🔇",
+      optionB: "Lose her ability to plan things 📂"
+    },
+    {
+      id: 8,
+      optionA: "Binge F1 documentaries 📺",
+      optionB: "Watch 1D concert footage on Sunday 🛋️"
+    },
+    {
+      id: 9,
+      optionA: "Have Lewis Hamilton on speed dial 📞",
+      optionB: "Have Niall Horan on speed dial ☎️"
+    },
+    {
+      id: 10,
+      optionA: "Give up being Type A for a month 🗓️",
+      optionB: "Give up her phone for a month 📴"
     }
   ],
-  
+
   letter: {
     greeting: "Dear Riya,",
     paragraphs: [
-      "Happy 21st Birthday to my absolute favorite human! I still can't believe we're celebrating this milestone today. It feels like just yesterday we were laughing at silly things in the back of class, and now you're officially 21!",
-      "Through all the ups and downs, you've been my constant anchor. Your kindness, your radiating warmth, and the way you bring light into every room you walk into is truly inspiring. You have a heart of gold, Riya.",
-      "Thank you for being the one I can text at 3 AM, the one who knows my order by heart, and the one who believes in me even when I doubt myself. Life is so much brighter, sillier, and more beautiful with you in it.",
-      "Today is all about you! I hope this year brings you infinite laughter, exciting adventures, and all the love you so deeply deserve. I'm so incredibly lucky to call you my best friend."
+      "From nursery classroom chaos to wherever we are now , you've been our ride or die through all of it. Twenty-one years of you being completely, unapologetically Type A (we love that for you, the rest of us are still figuring out how you have a plan for everything), and twenty-one years of us being endlessly grateful you picked us as your person.",
+      "You've survived every questionable decision we've made, every 2am phone call, every \"I need you right now\" — and you never once made me feel like a burden for needing you. That's rare. That's you.",
+      "Here's to the girl who somehow has both an F1 race schedule and a One Direction discography memorized, who plans everything six steps ahead, and who has been unwavering, loyal, and completely irreplaceable since we were basically toddlers.",
+      "This one's from me and Chrisan  the trio wouldn't be the trio without you. Happy 21st, bestie. Here's to the next 21 years of being absolutely unmatched."
     ],
     closing: "Love always,",
-    sender: "Your Forever Person 💛"
+    sender: "Glynis & Chrisan"
   },
-  
+
   reasons: [
-    "Your laugh is completely infectious and can instantly brighten my day.",
-    "You are always the first person to celebrate my wins, no matter how small.",
-    "You give the absolute best, warmest, and most comforting hugs.",
-    "The way you can make an adventure out of a simple trip to the grocery store.",
-    "You listen to my long, repetitive stories like you're hearing them for the first time.",
-    "Your fierce loyalty—you always have my back, no matter what.",
-    "How you remember the tiny details, like my favorite coffee order or a random movie I mentioned.",
-    "Our shared collection of inside jokes that would make absolutely no sense to anyone else.",
-    "Your ability to find the silver lining in every single situation.",
-    "You never judge me, even when I make the absolute silliest decisions.",
-    "You are the most generous person I know, always thinking of others first.",
-    "The late-night kitchen talks about life, the universe, and everything in between.",
-    "How you get genuinely excited about the things that make me happy.",
-    "Your terrible (but adorable) dancing that always makes me laugh.",
-    "You are my absolute go-to partner in crime for any spontaneous plan.",
-    "The way you appreciate good food and are always down for a food adventure.",
-    "Your strength and resilience—you inspire me to be a better, stronger person.",
-    "You know exactly when I need a pep talk, a listening ear, or just a quiet silence.",
-    "The way you treat everyone around you with genuine kindness and respect.",
-    "Because we can sit in comfortable silence for hours and it never feels awkward.",
-    "Because you are simply you, and my life is infinitely better with you in it."
-  ]
+    "You've been my person since nursery before either of us even knew what that meant",
+    "You're the only person I trust with a plan, a schedule, and a group chat itinerary",
+    "Your Type A energy has saved every trip, every project, every plan we've ever almost ruined",
+    "You can recite F1 standings faster than most people can name the actual sport's rules",
+    "You still know every word to every One Direction song, no shame, zero apologies",
+    "You've never once made me feel like a burden for needing you at 2am",
+    "You show up. Every time. No exceptions, no excuses",
+    "You've turned \"ride or die\" from a saying into an actual lived promise",
+    "Being part of our trio with you and Chrisan is one of the best things in my life",
+    "You have a five-year plan and somehow also room in it for us",
+    "You've watched more races than sleep-ins, and you regret none of it",
+    "You could organize a NASA launch and still text back within the minute",
+    "You've been my built-in hype woman since we were basically toddlers",
+    "Your loyalty has never once had conditions attached to it",
+    "You make chaos feel manageable just by being in the room",
+    "You remember details about my life I forget about myself",
+    "You've never let a bad day turn into a bad friendship",
+    "You somehow make being early to everything look effort-less",
+    "Your love language is showing up prepared, and mine is being grateful for it",
+    "Twenty-one years in and you're still the first person I want to tell everything to",
+    "There's no reason 22  because our story isn't finished, it's just getting started"
+  ],
+
+  footer: {
+    signature: "From Glynis + Chrisan - the trio 💜"
+  }
 };

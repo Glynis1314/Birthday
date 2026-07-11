@@ -1,19 +1,19 @@
 import React from 'react';
 import Hero from './components/Hero';
 import Gallery from './components/Gallery';
-import Timeline from './components/Timeline';
+import Rather from './components/Rather';
 import Letter from './components/Letter';
 import Reasons from './components/Reasons';
 import Footer from './components/Footer';
-import { Camera, Calendar, Heart, Mail, Home } from 'lucide-react';
+import { Camera, Gamepad2, Heart, Mail, Home } from 'lucide-react';
 
 export default function App() {
   const navItems = [
-    { label: 'Home', id: 'hero', icon: <Home size={18} /> },
-    { label: 'Gallery', id: 'gallery', icon: <Camera size={18} /> },
-    { label: 'Timeline', id: 'timeline', icon: <Calendar size={18} /> },
-    { label: 'Letter', id: 'letter', icon: <Mail size={18} /> },
-    { label: 'Reasons', id: 'reasons', icon: <Heart size={18} /> }
+    { label: 'Home', id: 'hero', icon: <Home size={16} /> },
+    { label: 'Gallery', id: 'gallery', icon: <Camera size={16} /> },
+    { label: 'Would Rather', id: 'rather', icon: <Gamepad2 size={16} /> },
+    { label: 'Letter', id: 'letter', icon: <Mail size={16} /> },
+    { label: 'Reasons', id: 'reasons', icon: <Heart size={16} /> }
   ];
 
   const handleNavClick = (id) => {
@@ -21,15 +21,15 @@ export default function App() {
   };
 
   return (
-    <div className="relative min-h-screen selection:bg-rose-200 selection:text-rose-900 bg-[#FAF6F0]">
-      {/* Floating Glassmorphic Navbar */}
-      <nav className="fixed bottom-6 left-1/2 transform -translate-x-1/2 z-40 bg-white/70 backdrop-blur-md px-6 py-3 rounded-full shadow-xl shadow-rose-100/40 border border-white/50 max-w-[90vw] md:max-w-md">
-        <ul className="flex items-center gap-4 sm:gap-6">
+    <div className="relative min-h-screen selection:bg-f1-purple/40 selection:text-white bg-[#0D0B1A]">
+      {/* Floating Glassmorphic Navbar styled in dark plum/purple */}
+      <nav className="fixed bottom-6 left-1/2 transform -translate-x-1/2 z-40 bg-[#2D2640]/80 backdrop-blur-md px-5 sm:px-6 py-3 rounded-full shadow-xl shadow-[#0D0B1A]/80 border border-f1-purple/25 w-max max-w-[95vw] md:max-w-xl">
+        <ul className="flex items-center justify-center gap-2 sm:gap-4">
           {navItems.map((item) => (
             <li key={item.id}>
               <button
                 onClick={() => handleNavClick(item.id)}
-                className="flex items-center gap-1.5 px-3 py-1.5 text-rose-800 hover:text-rose-600 font-semibold text-xs sm:text-sm rounded-full hover:bg-rose-50 transition-all duration-200 cursor-pointer"
+                className="flex items-center gap-1.5 px-3 py-1.5 text-[#EDEAFF] hover:text-f1-gold font-mono uppercase tracking-wider text-[10px] sm:text-xs rounded-full hover:bg-f1-purple/30 transition-all duration-200 cursor-pointer"
               >
                 {item.icon}
                 <span className="hidden sm:inline">{item.label}</span>
@@ -42,7 +42,7 @@ export default function App() {
       {/* Main Single Page Sections */}
       <Hero />
       <Gallery />
-      <Timeline />
+      <Rather />
       <Letter />
       <Reasons />
       <Footer />

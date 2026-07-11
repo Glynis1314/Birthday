@@ -50,9 +50,12 @@ export default function Gallery() {
   return (
     <section 
       id="gallery" 
-      className="py-24 px-4 sm:px-6 bg-gradient-to-b from-amber-50 to-rose-50"
+      className="relative py-24 px-4 sm:px-6 bg-[#0D0B1A]"
     >
-      <div className="max-w-6xl mx-auto">
+      {/* Telemetry Grid Line Background texture */}
+      <div className="absolute inset-0 telemetry-grid opacity-20 pointer-events-none" />
+
+      <div className="max-w-6xl mx-auto relative z-10">
         {/* Section Heading */}
         <div className="text-center mb-16">
           <motion.h2 
@@ -60,23 +63,23 @@ export default function Gallery() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, margin: "-100px" }}
             transition={{ duration: 0.6 }}
-            className="text-3xl sm:text-5xl font-extrabold text-rose-900 tracking-tight font-display mb-4"
+            className="text-4xl sm:text-6xl font-black text-white tracking-wider font-display uppercase mb-4"
           >
-            A Gallery of Beautiful Moments 📸
+            PODIUM MOMENTS // GALLERY 📸
           </motion.h2>
           <motion.div 
             initial={{ opacity: 0, scale: 0 }}
             whileInView={{ opacity: 1, scale: 1 }}
             viewport={{ once: true }}
             transition={{ duration: 0.4, delay: 0.2 }}
-            className="w-24 h-1 bg-amber-400 mx-auto rounded-full mb-4"
+            className="w-24 h-1 bg-f1-purple mx-auto rounded-full mb-4"
           />
           <motion.p 
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6, delay: 0.3 }}
-            className="text-amber-800 text-lg max-w-lg mx-auto"
+            className="text-[#EDEAFF] text-base max-w-lg mx-auto"
           >
             Some of my favorite memories of you, captured in frames of happiness and laughter.
           </motion.p>
@@ -94,9 +97,14 @@ export default function Gallery() {
             <motion.div
               key={img.id}
               variants={cardVariants}
-              whileHover={{ y: -6, scale: 1.02 }}
+              whileHover={{ 
+                y: -6, 
+                scale: 1.03,
+                borderColor: '#F5C400',
+                boxShadow: '0 10px 25px rgba(245, 196, 0, 0.15)'
+              }}
               onClick={() => openLightbox(index)}
-              className="break-inside-avoid relative overflow-hidden rounded-2xl bg-white border border-rose-100 shadow-md hover:shadow-xl transition-all duration-300 cursor-pointer group"
+              className="break-inside-avoid relative overflow-hidden rounded-2xl bg-[#2D2640] border-2 border-f1-purple/20 transition-all duration-300 cursor-pointer group"
             >
               {/* Photo Image */}
               <img 
@@ -107,12 +115,12 @@ export default function Gallery() {
               />
 
               {/* Hover Overlay with text */}
-              <div className="absolute inset-0 bg-gradient-to-t from-rose-900/80 via-rose-950/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-6">
-                <p className="text-white text-base font-semibold drop-shadow-md leading-relaxed font-display">
+              <div className="absolute inset-0 bg-gradient-to-t from-f1-purple/95 via-[#2D2640]/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-6">
+                <p className="text-white text-base font-semibold drop-shadow-md leading-relaxed font-sans">
                   {img.caption}
                 </p>
-                <span className="text-amber-300 text-xs mt-2 font-medium tracking-wide">
-                  CLICK TO VIEW 🔍
+                <span className="text-f1-gold text-xs font-mono font-bold mt-3 tracking-widest uppercase">
+                  LAP DATA // VIEW 🔍
                 </span>
               </div>
             </motion.div>

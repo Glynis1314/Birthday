@@ -1,11 +1,19 @@
-@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400;700&family=Poppins:wght@300;400;500;600;700;800&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@400;500;600;700;800;900&family=Inter:wght@300;400;500;600;700;800&family=Space+Mono:wght@400;700&family=Caveat:wght@400;700&display=swap');
 
 @import "tailwindcss";
 
 @theme {
-  --font-display: 'Poppins', sans-serif;
+  --font-display: 'Big Shoulders Display', sans-serif;
+  --font-sans: 'Inter', sans-serif;
+  --font-mono: 'Space Mono', monospace;
   --font-handwritten: 'Caveat', cursive;
-  --font-serif: 'Playfair Display', serif;
+
+  /* Pole Position F1 Theme Palette */
+  --color-f1-bg: #0D0B1A;
+  --color-f1-purple: #7C3AED;
+  --color-f1-gold: #F5C400;
+  --color-f1-text: #EDEAFF;
+  --color-f1-plum: #2D2640;
 }
 
 html {
@@ -14,10 +22,18 @@ html {
 }
 
 body {
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Inter', sans-serif;
   overflow-x: hidden;
-  background-color: #FAF6F0; /* Warm cream background */
-  color: #3f3f46; /* text-zinc-700 */
+  background-color: #0D0B1A; /* #0D0B1A deep space purple */
+  color: #EDEAFF; /* #EDEAFF pale lilac body */
+}
+
+/* Custom Telemetry Grid Background Pattern */
+.telemetry-grid {
+  background-image: 
+    linear-gradient(rgba(124, 58, 237, 0.05) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(124, 58, 237, 0.05) 1px, transparent 1px);
+  background-size: 40px 40px;
 }
 
 /* Reset Oxlint/Vite template limits */
