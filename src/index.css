@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400;700&family=Poppins:wght@300;400;500;600;700;800&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+@import "tailwindcss";
+
+@theme {
+  --font-display: 'Poppins', sans-serif;
+  --font-handwritten: 'Caveat', cursive;
+  --font-serif: 'Playfair Display', serif;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 2rem;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  overflow-x: hidden;
+  background-color: #FAF6F0; /* Warm cream background */
+  color: #3f3f46; /* text-zinc-700 */
+}
+
+/* Reset Oxlint/Vite template limits */
+#root {
+  width: 100% !important;
+  max-width: 100% !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  text-align: left !important;
+  border-inline: none !important;
+}
